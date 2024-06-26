@@ -25,7 +25,7 @@ elif uc=='p':
         print("you lost")
 elif uc=='s':
     if cc=='s':
-        print("Computer chose scissos")
+        print("Computer chose scissors")
         print("its a tie")
     elif cc=='r':
         print("Computer chose rock") 
