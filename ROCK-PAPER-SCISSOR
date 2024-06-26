@@ -1,0 +1,38 @@
+import random 
+print("LETS PLAY ROCK PAPER SCISSOR GAME")
+uc=input(("For choosing rock enter r , for paper enter p ,for scissor enter s \n"))
+x=['r','p','s']
+cc=random.choice(x)
+if uc=='r':
+    if cc==uc:
+        print("even computer chose rock ")
+        print("its a tie")
+    elif cc=='p':
+        print("computer chose paper")
+        print("you lost ")
+    else:
+        print("Computer chose scissors")
+        print("You won!!!") 
+elif uc=='p':
+    if cc==uc:
+        print("even computer chose paper")
+        print('its a tie')
+    elif cc=='r':
+        print("computer chose rock")
+        print("you won!!!")
+    else:
+        print("computer chose scissors")
+        print("you lost")
+elif uc=='s':
+    if cc=='s':
+        print("Computer chose scissos")
+        print("its a tie")
+    elif cc=='r':
+        print("Computer chose rock") 
+        print("you lost")
+    else:       
+        print("Computer chose paper ")
+        print("you won!!!")
+else:
+
+    print("Enter a valid input either r,p or s")   
