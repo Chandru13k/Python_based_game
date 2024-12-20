@@ -1,38 +1,44 @@
 import random 
 print("LETS PLAY ROCK PAPER SCISSOR GAME")
-uc=input(("For choosing rock enter r , for paper enter p ,for scissor enter s : "))
-x=['r','p','s']
-cc=random.choice(x)
-if uc.lower()=='r':
-    if cc==uc:
-        print("even computer chose rock ")
-        print("its a tie")
-    elif cc=='p':
-        print("computer chose paper")
-        print("you lost ")
-    else:
-        print("Computer chose scissors")
-        print("You won!!!") 
-elif uc.lower()=='p':
-    if cc==uc:
-        print("even computer chose paper")
-        print('its a tie')
-    elif cc=='r':
-        print("computer chose rock")
-        print("you won!!!")
-    else:
-        print("computer chose scissors")
-        print("you lost")
-elif uc.lower()=='s':
-    if cc=='s':
-        print("Computer chose scissors")
-        print("its a tie")
-    elif cc=='r':
-        print("Computer chose rock") 
-        print("you lost")
-    else:       
-        print("Computer chose paper ")
-        print("you won!!!")
-else:
 
-    print("Enter a valid input either r,p or s")   
+x=['r','p','s']
+pnt=0
+while(pnt<=5):
+    cc=random.choice(x)
+    uc=input(("For choosing rock enter r , for paper enter p ,for scissor enter s : "))
+    if uc.lower()=='r':
+        if cc==uc:
+            print("even computer chose rock ")
+            print("its a tie")
+        elif cc=='p':
+            print("computer chose paper")
+            print("you lost ")
+        else:
+            print("Computer chose scissors")
+            print("You won!!!")
+            pnt+=1
+    elif uc.lower()=='p':
+        if cc==uc:
+            print("even computer chose paper")
+            print('its a tie')
+        elif cc=='r':
+            print("computer chose rock")
+            print("you won!!!")
+            pnt+=1
+        else:
+            print("computer chose scissors")
+            print("you lost")
+    elif uc.lower()=='s':
+        if cc=='s':
+            print("Computer chose scissors")
+            print("its a tie")
+        elif cc=='r':
+            print("Computer chose rock") 
+            print("you lost")
+        else:       
+            print("Computer chose paper ")
+            print("you won!!!")
+            pnt+=1
+    else:
+
+        print("Enter a valid input either r,p or s")  
